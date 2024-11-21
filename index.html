@@ -11,13 +11,18 @@
 </head>
 <body>
     <header>
-		<nav class="navigation">
-			<ul>
-				<li><a href="#about">About</a></li>
-				<li><a href="#benefits">Benefits</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+		<div class="menu-container">
+			<button class="menu-toggle" aria-label="Toggle navigation">
+				&#9776;
+			</button>
+			<nav class="navigation">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#benefits">Benefits</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 		<div class="banner">
 			<img src="banner.jpg" alt="Banner" />
 		</div>
@@ -45,5 +50,11 @@
     <footer>
         <p>&copy; 2024 My page. All rights reserved.</p>
     </footer>
+	<script>
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+        const nav = document.querySelector('.navigation');
+        nav.classList.toggle('active'); // Переключаем класс 'active'
+    });
+	</script>
 </body>
 </html>
