@@ -5,6 +5,10 @@ body {
     line-height: 1.6;
     background-color: #f4f4f9;
     color: #333;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -21,6 +25,7 @@ header h1 {
 
 main {
     padding: 20px;
+    flex: 1;
 }
 
 section {
@@ -61,4 +66,8 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
