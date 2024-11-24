@@ -12,99 +12,36 @@ body {
 }
 
 header {
+    background: url('banner.webp') no-repeat center center;
+    background-size: cover;
     color: white;
     text-align: center;
-    padding: 0;
-    overflow: hidden;
+    padding: 20px 0;
     position: relative;
-}
-
-header {
-    overflow: visible;
-}
-
-.menu-container {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.menu-toggle {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2em;
-    cursor: pointer;
-}
-
-.menu-toggle:focus {
-    outline: none;
-}
-
-.navigation {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 10px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navigation ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation li {
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-}
-
-.navigation li:last-child {
-    border-bottom: none;
-}
-
-.navigation a {
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
-    display: block;
-}
-
-.navigation a:hover {
-    background-color: #4CAF50;
-    color: white;
-}
-
-.navigation.active {
-    display: block;
-}
-
-header .banner {
-    max-height: 200px;
-    overflow: hidden;
-}
-
-header .banner img {
-    width: 100%;
-    height: auto;
-    display: block;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
     font-size: 2.5em;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    z-index: 2;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
 
 main {
     padding: 20px;
@@ -126,13 +63,8 @@ section h2 {
     margin-bottom: 10px;
 }
 
-a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+p {
+    margin-bottom: 15px;
 }
 
 ul {
@@ -141,6 +73,15 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -153,4 +94,31 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Контактные данные */
+section a {
+    font-weight: bold;
+}
+
+section a:hover {
+    color: #333;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
 }
