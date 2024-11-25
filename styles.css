@@ -96,7 +96,6 @@ footer {
     width: 100%;
 }
 
-/* Контактные данные */
 section a {
     font-weight: bold;
 }
@@ -108,7 +107,6 @@ section a:hover {
     padding: 2px 4px;
 }
 
-/* Мобильные устройства */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
