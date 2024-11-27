@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Детальний опис хмарних технологій. Як вони працюють, їх переваги та вплив на бізнес.">
+    <meta name="keywords" content="хмарні технології, опис, як працюють хмари, бізнес">
+    <meta name="author" content="Черенов О. В.">
+    <link rel="stylesheet" href="styles.css">
+    <title>Опис хмарних технологій</title>
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <button class="menu-toggle">☰</button>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="details.html">Типи хмар</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                Опис хмарних технологій
+            </a>
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Що таке хмарні технології?</h2>
+            <p>Хмарні технології дозволяють компаніям використовувати обчислювальні ресурси через інтернет. Вони включають сервери, сховища, бази даних, мережі, програмне забезпечення та багато іншого. Хмара забезпечує швидкість, зручність і доступність без необхідності фізичної інфраструктури.</p>
+        </section>
+        <section>
+            <h2>Типи хмарних рішень</h2>
+            <ul>
+                <li><strong>Приватна хмара:</strong> Рішення для окремої організації з високим рівнем контролю та безпеки.</li>
+                <li><strong>Публічна хмара:</strong> Спільно використовувані ресурси для багатьох користувачів.</li>
+                <li><strong>Гібридна хмара:</strong> Комбінація приватних і публічних хмар для досягнення балансу.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Автор: <em>Черенов О. В.</em> &copy; 2024. Всі права захищені.</p>
+    </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navigation = document.querySelector('.navigation');
+
+        menuToggle.addEventListener('click', () => {
+            navigation.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

@@ -42,6 +42,66 @@ header::before {
     z-index: 0;
 }
 
+.menu-container {
+    position: fixed; /* Меню будет закреплено в левом верхнем углу */
+    top: 10px;
+    left: 10px;
+    z-index: 1000; /* Убедитесь, что меню выше других элементов */
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #333;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+.navigation {
+    display: none; /* Меню скрыто по умолчанию */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Выше остальных элементов, но ниже контейнера */
+}
+
+.navigation.active {
+    display: block; /* Меню отображается при активации */
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation li:last-child {
+    border-bottom: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
 
 main {
     padding: 20px;

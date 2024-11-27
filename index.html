@@ -6,12 +6,25 @@
     <meta name="description" content="Дізнайтеся про переваги хмарних технологій у бізнесі. Ефективність, безпека та економія для вашої компанії.">
     <meta name="keywords" content="хмарні технології, бізнес, ефективність, безпека, економія">
     <meta name="author" content="Черенов О. В.">
-    <link rel="stylesheet" href="styles.min.css"> <!-- Посилання на мініфікований CSS -->
+    <link rel="stylesheet" href="styles.css">
     <title>Переваги хмарних технологій для бізнесу</title>
 </head>
 <body>
     <header>
-        <h1>Переваги хмарних технологій у бізнесі</h1>
+        <div class="menu-container">
+            <button class="menu-toggle">☰</button>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="details.html">Типи хмар</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                Переваги хмарних технологій у бізнесі
+            </a>
+        </h1>
     </header>
     <main>
         <section>
@@ -35,5 +48,13 @@
     <footer>
         <p>Автор: <em>Черенов О. В.</em> &copy; 2024. Всі права захищені.</p>
     </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navigation = document.querySelector('.navigation');
+
+        menuToggle.addEventListener('click', () => {
+            navigation.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
