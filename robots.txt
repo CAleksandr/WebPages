@@ -1,0 +1,11 @@
+# Robots.txt for the website
+
+User-agent: *
+Disallow: /temp/
+Disallow: /private/
+
+Allow: /index.html
+Allow: /details.html
+Allow: /researchers.html
+
+Sitemap: https://caleksandr.github.io/WebPages/sitemap.xml
